@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: Roboto, Droid-sans, Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: relative;
+  overflow: hidden;
+}
+[data-role=page]{
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(0, 50%, 50%);
+  display:none;
+}
+.active-page{
+  display:block;
+}
+header{
+  background-color:hsl(0, 50%, 50%);
+  color: hsl(0, 100%, 100%);
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.64);
+}
+h1{
+  font-size: 1.5rem;
+}
+.content{
+  padding: 2rem;
+}
+ul{
+    
+}
+li{
+    list-style: none;
+    margin-top: 1rem;
+    text-align: center;
+    border: solid;
+}
+button{
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    background-color:hsl(0, 50%, 50%);
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    width: 90%;
+}
+a{
+  padding: 0.2rem 2rem;
+  border: none;
+  background-color:hsl(0, 50%, 50%);
+  color: hsl(0, 100%, 100%);
+  text-decoration: none;
+  text-align: center;
+}
+.btnAdd{
+  background-color: hsl(0, 0%, 50%);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  line-height: 3.6rem;
+  vertical-align:text-top;
+  box-shadow: 0 0 12px hsla(0, 0%, 0%, 0.64);
+  position:fixed;
+  bottom: 2rem;
+  right: 2rem;
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content=" img-src 'self' data:; default-src 'self' https://griffis.edumedia.ca 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src 'self' blob:">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0" />
+    <title>ReviewR</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section data-role="page" id="home" class="active-page">
+        <header>
+            <h1>Home Page</h1>
+        </header>
+        <div id="reviews">
+
+        </div>
+        <div data-href="add" class="btnAdd">+</div>
+    </section>
+    <section data-role="page" id="add" class="">
+        <header>
+            <h1>Add</h1>
+        </header>
+        <div class="content">
+            <form>
+
+                <input type="text" id="title" name="title" placeholder="Title" />
+
+                <input type="text" id="review" name="review" placeholder="Review" />
+
+                <input type="number" id="rating" value="1" name="rating" min="1" max="5" />
+
+                <div class="pic">
+
+                </div>
+                <button data-href="takePic" id="takePic">Camera</button>
+                <button data-href="home" id="back">Cancel</button>
+                <button data-href="home" id="save">Save</button>
+            </form>
+        </div>
+    </section>
+    <section data-role="page" id="details" class="">
+        <header>
+            <h1>Details</h1>
+        </header>
+        <div class="content">
+
+            <p><a data-href="home" href="#home">Home</a></p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script charset="utf-8" src="cordova.js"></script>
+</body>
+
+</html>
